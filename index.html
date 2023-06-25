@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ultimate Unit Converter</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Ultimate Unit Converter</h1>
+    <div class="converter">
+      <input type="number" id="inputValue" class="form-control" placeholder="Enter value">
+      <div class="grid-container">
+        <button class="grid-item" onclick="changeUnits('length')">Length</button>
+        <button class="grid-item" onclick="changeUnits('temperature')">Temperature</button>
+        <button class="grid-item" onclick="changeUnits('time')">Time</button>
+        <button class="grid-item" onclick="changeUnits('weight')">Weight</button>
+      </div>
+      <select id="inputUnit" class="form-control"></select>
+      <select id="outputUnit" class="form-control"></select>
+      <button class="btn btn-primary btn-block" onclick="convert()">Convert</button>
+      <h4 class="mt-4">Result: <span id="outputValue"></span></h4>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
